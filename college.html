@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College of Engineering Karunagappally</title>
+  <link rel="stylesheet" href="college.css">
+</head>
+<body>
+
+  <!-- 🧭 Navigation at the top -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#departments">Departments</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#contact">Contact</a>
+    <a href="#" onclick="openLogin()">Login</a>
+  </nav>
+
+  <!-- 🌄 Hero Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <div class="logo-container">
+        <img src="logo.png" alt="College Logo" class="whiten-image" style="height: 100px;">
+        <h1 style="font-family: 'Open Sans', sans-serif; margin: 0;">College of Engineering Karunagappally</h1>
+      </div> 
+      <div id="info"><p>(Managed By IHRD, Govt. Of Kerala)<br>Affiliated to APJ Abdul Kalam Technological University</p></div>  
+    </div>
+  </div>
+
+  <!-- 📚 Sections -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>College of Engineering Karunagappally (CEK), established in 1999, is affiliated to APJ Abdul Kalam Technological University and approved by AICTE. CEK offers quality education in engineering disciplines and is managed by the Institute of Human Resources Development (IHRD), a government undertaking.</p>
+  </section>
+  
+  <section id="departments">
+    <h2>Departments</h2>
+    <ul>
+      <li>Computer Science & Engineering</li>
+      <li>Electronics & Communication Engineering</li>
+      <li>Electrical & Electronics Engineering</li>
+      <li>Mechanical Engineering</li>
+    </ul>
+  </section>
+
+  <section id="admissions">
+    <h2>Admissions</h2>
+    <p>Admissions are conducted through the Kerala Engineering Entrance Examination (KEAM). Candidates are selected based on merit. For more details, visit the official CEE Kerala website.</p>
+    <a class="button" href="https://cee.kerala.gov.in" target="_blank">KEAM Info</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Thodiyoor, Karunagappally, Kollam, Kerala 690523</p>
+    <p><strong>Email:</strong> <a href="mailto:principal@cek.ac.in">principal@cek.ac.in</a></p>
+    <p><strong>Phone:</strong> +91-476-2625520</p>
+  </section>
+
+  <!-- 📩 Footer -->
+  <footer>
+    <p>&copy; 2025 College of Engineering Karunagappally | Designed by You</p>
+  </footer>
+
+  <!-- 🔐 Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&times;</span>
+      <h3>Login</h3>
+      <form onsubmit="return validateLoginForm()">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <div id="errorMsg" class="error"></div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
